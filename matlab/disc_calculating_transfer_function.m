@@ -20,6 +20,6 @@ F4=F3*A+a3* eye(4);a4=-(1/4)*trace(F4*A);
 Pogr=F4*A+a4*eye(4)
 syms p
 h=p^4+a1*p^3+a2*p^2+a3*p+a4;
-W=C*((F1*p^3+F2*p^2+F3*p+F4)/h)*B+D;
+W=C*((F1*p^3+F2*p^2+F3*p+F4)/h)*Bg+D;
 Wpa=vpa(W,5);
 pretty(expand(Wpa))
